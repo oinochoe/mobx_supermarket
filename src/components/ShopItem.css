@@ -1,0 +1,22 @@
+@charset "utf-8";
+.ShopItem {
+    padding: 0.5rem;
+    border: 1px solid #495057;
+    border-radius: 2px;
+    background: white;
+    cursor: pointer;
+}
+
+.ShopItem h4 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.ShopItem:hover {
+    color: white;
+    background: #495057;
+}
+
+.ShopItem+.ShopItem {
+    margin-top: 1rem;
+}

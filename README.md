@@ -14,3 +14,29 @@
 
 - SuperMarketTemplate.jsx
   - 상품과 장바구니를 props로 받아와서 보여줌
+
+- SuperMarket
+  - SuperMarketTemplate을 사용한 슈퍼마켓을 보여줌
+
+- ShopItem
+  - 숍 아이템
+
+- ShopItemList
+  - 숍 아이템의 리스트들. 이것을 다시 SuperMarket에서 보여줌
+
+- BasketItem
+  - 장바구니도 마찬가지..
+
+## Store 작성
+
+- 본격적으로 store 작성하면서 기능 구현
+
+## mobx의 리액트 컴포넌트 최적화
+
+- 리스트를 렌더링할 땐 컴포넌트에 리스트 관련 데이터만 props로 넣기
+- 세부참조는 최대한 늦게
+- 함수는 미리 바인딩하고, 파라미터는 내부에서 넣어주기
+
+## 결론
+
+- 흑마법이다. 좋네요! 😸
