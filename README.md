@@ -29,7 +29,8 @@
 
 ## Store 작성
 
-- 본격적으로 store 작성하면서 기능 구현
+- 본격적으로 store 작성하면서 기능 구현 (hooks)
+- hooks 사용 시 Provider와 Context를 사용하지 않고 구현
 
 ## mobx의 리액트 컴포넌트 최적화
 

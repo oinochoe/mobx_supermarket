@@ -1,11 +1,11 @@
 ﻿import React from 'react';
-import './ShopItem.css';
+import './_ShopItem.css';
 
-const ShopItem = ({ name, price }) => {
+const ShopItem = ({ name, price, onPut }) => {
     return (
-        <div className='ShopItem'>
+        <div className='ShopItem' onClick={() => onPut(name, price)}>
             <h4>{name}</h4>
-            <div>{price}원</div>
+            <div>{price}</div>
         </div>
     );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import './SuperMarketTemplate.css';
+import './_SuperMarketTemplate.css';
 
 const SuperMarketTemplate = ({ items, basket }) => {
     return (

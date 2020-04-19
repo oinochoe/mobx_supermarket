@@ -1,5 +1,7 @@
 import React from 'react';
 import ShopItem from './ShopItem';
+import useStore from '../useStore';
+import { useObserver } from 'mobx-react';
 
 const items = [
     {
@@ -21,8 +23,16 @@ const items = [
 ];
 
 const ShopItemList = () => {
-    const itemList = items.map((item) => <ShopItem {...item} key={item.name} />);
-    return <div>{itemList}</div>;
+    const { market } = useStore();
+
+    const onPut = (name, price) => {
+        market.put(name, price);
+    };
+
+    return useObserver(() => {
+        const itemList = items.map((item) => <ShopItem {...item} key={item.name} onPut={onPut} />);
+        return <div>{itemList}</div>;
+    });
 };
 
 export default ShopItemList;
